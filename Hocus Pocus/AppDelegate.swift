@@ -12,6 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    @IBOutlet weak var statusMenu: NSMenu!
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
@@ -22,6 +23,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-
+    @IBAction func showHiddenFiles(sender: NSMenuItem) {
+    }
+    
 }
 

@@ -11,7 +11,11 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Hocus_Pocus" customModuleProvider="target"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Hocus_Pocus" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="mWC-sy-THO" id="bXH-4O-2UM"/>
+            </connections>
+        </customObject>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
@@ -666,6 +670,9 @@
             <items>
                 <menuItem title="Show Hidden Files" id="gS6-AJ-nPK">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showHiddenFiles:" target="Voe-Tx-rLC" id="xUJ-WG-YSi"/>
+                    </connections>
                 </menuItem>
             </items>
             <point key="canvasLocation" x="158.5" y="144.5"/>
