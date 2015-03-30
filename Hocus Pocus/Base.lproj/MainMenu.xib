@@ -674,6 +674,12 @@
                         <action selector="showHiddenFiles:" target="Voe-Tx-rLC" id="xUJ-WG-YSi"/>
                     </connections>
                 </menuItem>
+                <menuItem title="Exit" id="fqH-02-oXZ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="exitApp:" target="Voe-Tx-rLC" id="imO-zk-D14"/>
+                    </connections>
+                </menuItem>
             </items>
             <point key="canvasLocation" x="158.5" y="144.5"/>
         </menu>

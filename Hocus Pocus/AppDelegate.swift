@@ -77,5 +77,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         killTask.launch()
     }
     
+    @IBAction func exitApp(sender: NSMenuItem) {
+        NSApplication.sharedApplication().terminate(nil)
+    }
 }
 
