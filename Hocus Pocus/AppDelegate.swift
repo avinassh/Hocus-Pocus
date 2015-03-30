@@ -80,5 +80,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func exitApp(sender: NSMenuItem) {
         NSApplication.sharedApplication().terminate(nil)
     }
+    
+    @IBAction func showAboutWindow(sender: NSMenuItem) {
+        NSApplication.sharedApplication().orderFrontStandardAboutPanel(nil)
+    }
+    
 }
 

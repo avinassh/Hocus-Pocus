@@ -674,6 +674,12 @@
                         <action selector="showHiddenFiles:" target="Voe-Tx-rLC" id="xUJ-WG-YSi"/>
                     </connections>
                 </menuItem>
+                <menuItem title="About Hocus Pocus" id="853-Tc-lGA">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showAboutWindow:" target="Voe-Tx-rLC" id="7cF-NE-8C7"/>
+                    </connections>
+                </menuItem>
                 <menuItem isSeparatorItem="YES" id="pve-9u-gaz"/>
                 <menuItem title="Exit" id="fqH-02-oXZ">
                     <modifierMask key="keyEquivalentModifierMask"/>
