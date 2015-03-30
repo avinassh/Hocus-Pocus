@@ -674,6 +674,7 @@
                         <action selector="showHiddenFiles:" target="Voe-Tx-rLC" id="xUJ-WG-YSi"/>
                     </connections>
                 </menuItem>
+                <menuItem isSeparatorItem="YES" id="pve-9u-gaz"/>
                 <menuItem title="Exit" id="fqH-02-oXZ">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
