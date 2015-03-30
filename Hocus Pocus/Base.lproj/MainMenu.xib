@@ -662,5 +662,13 @@
                 </menuItem>
             </items>
         </menu>
+        <menu id="mWC-sy-THO">
+            <items>
+                <menuItem title="Show Hidden Files" id="gS6-AJ-nPK">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="158.5" y="144.5"/>
+        </menu>
     </objects>
 </document>
