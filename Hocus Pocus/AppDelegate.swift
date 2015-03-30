@@ -109,7 +109,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         // convert the read NSData to string
         if let output = NSString(data: data, encoding: NSUTF8StringEncoding) {
-            return output
+            // the returned output contains a newline character at the end 
+            // and this introduced a bug. Following change will strip away the 
+            // newline characters. 
+            // stringByTrimmingCharactersInSet(_:) returns a new string object,
+            // hence even though 'output' is a constant variable, we can call 
+            // on it
+            return output.stringByTrimmingCharactersInSet(NSCharacterSet.newlineCharacterSet())
         }
         
         return "NO"
