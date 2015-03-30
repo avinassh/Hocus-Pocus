@@ -13,6 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var statusMenu: NSMenu!
+    @IBOutlet weak var showHiddenFilesMenuItem: NSMenuItem!
+    
 
     // Menu Bar is what generally called, but in code it's actually called as
     // statusBar and statusMenu
@@ -39,6 +41,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.image = icon
         // add the custom menu we created to the statusItem
         statusItem.menu = statusMenu
+        
+        // check the current status. If the hidden files are already visible, 
+        // then show the checkmark
+        if "YES" == getCurrentHideStatus() {
+            showHiddenFilesMenuItem.state = NSOnState
+        }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -83,6 +91,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @IBAction func showAboutWindow(sender: NSMenuItem) {
         NSApplication.sharedApplication().orderFrontStandardAboutPanel(nil)
+    }
+    
+    func getCurrentHideStatus() -> String {
+        // createa  new pipe which holds the output of command run
+        var pipe = NSPipe()
+        let checkStatus = NSTask()
+        // set the output of NSTask to pipe, so that output is written to pipe
+        checkStatus.standardOutput = pipe
+        checkStatus.launchPath = "/usr/bin/defaults"
+        checkStatus.arguments = ["read", "com.apple.finder", "AppleShowAllFiles"]
+
+        checkStatus.launch()
+        checkStatus.waitUntilExit()
+        
+        // read the pipe data, it is actaully of NSData
+        let data = pipe.fileHandleForReading.readDataToEndOfFile()
+        // convert the read NSData to string
+        if let output = NSString(data: data, encoding: NSUTF8StringEncoding) {
+            return output
+        }
+        
+        return "NO"
     }
     
 }

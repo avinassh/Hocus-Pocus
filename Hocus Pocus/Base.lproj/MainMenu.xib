@@ -13,6 +13,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Hocus_Pocus" customModuleProvider="target">
             <connections>
+                <outlet property="showHiddenFilesMenuItem" destination="gS6-AJ-nPK" id="6Qb-wc-y9q"/>
                 <outlet property="statusMenu" destination="mWC-sy-THO" id="bXH-4O-2UM"/>
             </connections>
         </customObject>
