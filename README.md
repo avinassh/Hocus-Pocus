@@ -2,7 +2,8 @@
 
 Hocus Pocus is a very simple, menu bar only, pure Swift app which lets you show hidden files on OS X and also hide them again. This app requires Yosemite (OS X 10.10) or higher to run. 
 
-Download the latest binary from [Releases](https://github.com/avinassh/Hocus-Pocus/releases/latest). 
+## Download 
+Download the latest [version v0.1](https://github.com/avinassh/Hocus-Pocus/releases/download/v0.1/Hocus-Pocus.zip). 
 
 ## Screenshot
 ![screenshot](images/screenshot.png)
