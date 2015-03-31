@@ -393,6 +393,7 @@
 				82ACE7F61AC9A2B700FEA6B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82ACE7F71AC9A2B700FEA6B1 /* Build configuration list for PBXNativeTarget "Hocus PocusTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +402,7 @@
 				82ACE7F91AC9A2B700FEA6B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
