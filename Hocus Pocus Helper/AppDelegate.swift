@@ -20,6 +20,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         println(NSBundle.mainBundle().bundlePath)
         let pathToMainApp = NSBundle.mainBundle().bundlePath.stringByDeletingLastPathComponent.stringByDeletingLastPathComponent.stringByDeletingLastPathComponent.stringByDeletingLastPathComponent
         NSWorkspace.sharedWorkspace().launchApplication("Hocus Pocus.app")
+        
+        // is helper actually starting at all?
+        println("I am in helper")
+        let helperCheck = NSTask()
+        helperCheck.launchPath = "/bin/echo"
+        helperCheck.arguments = ["echo", "success", ">", "~/Desktop/success"]
+        helperCheck.launch()
+        
         NSApplication.sharedApplication().terminate(self)
     }
 
