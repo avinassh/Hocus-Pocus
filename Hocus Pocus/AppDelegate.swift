@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -15,7 +16,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var showHiddenFilesMenuItem: NSMenuItem!
     
+    
+    let mainBundle: NSBundle
+    let helperBundle: NSBundle
 
+    override init() {
+        self.mainBundle = NSBundle.mainBundle()
+        let path = mainBundle.bundlePath.stringByAppendingPathComponent(
+            "Contents/Library/LoginItems/Hocus Pocus Helper.app")
+        self.helperBundle = NSBundle(path: path)!
+        
+        super.init()
+    }
+    
     // Menu Bar is what generally called, but in code it's actually called as
     // statusBar and statusMenu
     
@@ -90,7 +103,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @IBAction func showAboutWindow(sender: NSMenuItem) {
-        NSApplication.sharedApplication().orderFrontStandardAboutPanel(nil)
+        //NSApplication.sharedApplication().orderFrontStandardAboutPanel(nil)
+        makeThisAppStartAtLogin(1)
     }
     
     func getCurrentHideStatus() -> String {
@@ -119,6 +133,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         return "NO"
+    }
+    
+    // this code should actually be moved to PreferencesVC
+    func makeThisAppStartAtLogin(state: Int) {
+        // let launchDaemon: CFStringRef = "avi.Hocus-Pocus-Helper"
+        // if SMLoginItemSetEnabled(launchDaemon, enabled: Boolean(1)) {
+        // if SMLoginItemSetEnabled(launchDaemon, Boolean(state)) != 0 {
+
+        let result = SMLoginItemSetEnabled(helperBundle.bundleIdentifier!, Boolean(state))
+        
+        println(result)
+        
+        if result != 0 {
+            println("success")
+        }
+        else {
+            println("failed")
+        }
     }
     
 }
