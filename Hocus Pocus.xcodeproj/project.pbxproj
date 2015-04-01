@@ -11,6 +11,10 @@
 		82ACE7E21AC9A2B700FEA6B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82ACE7E11AC9A2B700FEA6B1 /* Images.xcassets */; };
 		82ACE7E51AC9A2B700FEA6B1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82ACE7E31AC9A2B700FEA6B1 /* MainMenu.xib */; };
 		82ACE7F11AC9A2B700FEA6B1 /* Hocus_PocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACE7F01AC9A2B700FEA6B1 /* Hocus_PocusTests.swift */; };
+		82D1F5E11ACC28C00046248F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1F5E01ACC28C00046248F /* AppDelegate.swift */; };
+		82D1F5E31ACC28C00046248F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D1F5E21ACC28C00046248F /* Images.xcassets */; };
+		82D1F5E61ACC28C00046248F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82D1F5E41ACC28C00046248F /* MainMenu.xib */; };
+		82D1F5F21ACC28C10046248F /* Hocus_Pocus_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1F5F11ACC28C10046248F /* Hocus_Pocus_HelperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +24,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 82ACE7D91AC9A2B700FEA6B1;
 			remoteInfo = "Hocus Pocus";
+		};
+		82D1F5EC1ACC28C10046248F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82ACE7D21AC9A2B700FEA6B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82D1F5DB1ACC28C00046248F;
+			remoteInfo = "Hocus Pocus Helper";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -32,6 +43,14 @@
 		82ACE7EA1AC9A2B700FEA6B1 /* Hocus PocusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hocus PocusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82ACE7EF1AC9A2B700FEA6B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82ACE7F01AC9A2B700FEA6B1 /* Hocus_PocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hocus_PocusTests.swift; sourceTree = "<group>"; };
+		82D1F5DC1ACC28C00046248F /* Hocus Pocus Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hocus Pocus Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D1F5DF1ACC28C00046248F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82D1F5E01ACC28C00046248F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82D1F5E21ACC28C00046248F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		82D1F5E51ACC28C00046248F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		82D1F5EB1ACC28C10046248F /* Hocus Pocus HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hocus Pocus HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D1F5F01ACC28C10046248F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82D1F5F11ACC28C10046248F /* Hocus_Pocus_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hocus_Pocus_HelperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +68,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82D1F5D91ACC28C00046248F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D1F5E81ACC28C10046248F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +90,8 @@
 			children = (
 				82ACE7DC1AC9A2B700FEA6B1 /* Hocus Pocus */,
 				82ACE7ED1AC9A2B700FEA6B1 /* Hocus PocusTests */,
+				82D1F5DD1ACC28C00046248F /* Hocus Pocus Helper */,
+				82D1F5EE1ACC28C10046248F /* Hocus Pocus HelperTests */,
 				82ACE7DB1AC9A2B700FEA6B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +101,8 @@
 			children = (
 				82ACE7DA1AC9A2B700FEA6B1 /* Hocus Pocus.app */,
 				82ACE7EA1AC9A2B700FEA6B1 /* Hocus PocusTests.xctest */,
+				82D1F5DC1ACC28C00046248F /* Hocus Pocus Helper.app */,
+				82D1F5EB1ACC28C10046248F /* Hocus Pocus HelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +139,42 @@
 			isa = PBXGroup;
 			children = (
 				82ACE7EF1AC9A2B700FEA6B1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82D1F5DD1ACC28C00046248F /* Hocus Pocus Helper */ = {
+			isa = PBXGroup;
+			children = (
+				82D1F5E01ACC28C00046248F /* AppDelegate.swift */,
+				82D1F5E21ACC28C00046248F /* Images.xcassets */,
+				82D1F5E41ACC28C00046248F /* MainMenu.xib */,
+				82D1F5DE1ACC28C00046248F /* Supporting Files */,
+			);
+			path = "Hocus Pocus Helper";
+			sourceTree = "<group>";
+		};
+		82D1F5DE1ACC28C00046248F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82D1F5DF1ACC28C00046248F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82D1F5EE1ACC28C10046248F /* Hocus Pocus HelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				82D1F5F11ACC28C10046248F /* Hocus_Pocus_HelperTests.swift */,
+				82D1F5EF1ACC28C10046248F /* Supporting Files */,
+			);
+			path = "Hocus Pocus HelperTests";
+			sourceTree = "<group>";
+		};
+		82D1F5EF1ACC28C10046248F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82D1F5F01ACC28C10046248F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,6 +217,41 @@
 			productReference = 82ACE7EA1AC9A2B700FEA6B1 /* Hocus PocusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		82D1F5DB1ACC28C00046248F /* Hocus Pocus Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82D1F5F71ACC28C10046248F /* Build configuration list for PBXNativeTarget "Hocus Pocus Helper" */;
+			buildPhases = (
+				82D1F5D81ACC28C00046248F /* Sources */,
+				82D1F5D91ACC28C00046248F /* Frameworks */,
+				82D1F5DA1ACC28C00046248F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hocus Pocus Helper";
+			productName = "Hocus Pocus Helper";
+			productReference = 82D1F5DC1ACC28C00046248F /* Hocus Pocus Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82D1F5EA1ACC28C10046248F /* Hocus Pocus HelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82D1F5F81ACC28C10046248F /* Build configuration list for PBXNativeTarget "Hocus Pocus HelperTests" */;
+			buildPhases = (
+				82D1F5E71ACC28C10046248F /* Sources */,
+				82D1F5E81ACC28C10046248F /* Frameworks */,
+				82D1F5E91ACC28C10046248F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82D1F5ED1ACC28C10046248F /* PBXTargetDependency */,
+			);
+			name = "Hocus Pocus HelperTests";
+			productName = "Hocus Pocus HelperTests";
+			productReference = 82D1F5EB1ACC28C10046248F /* Hocus Pocus HelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,6 +267,13 @@
 					82ACE7E91AC9A2B700FEA6B1 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = 82ACE7D91AC9A2B700FEA6B1;
+					};
+					82D1F5DB1ACC28C00046248F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					82D1F5EA1ACC28C10046248F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 82D1F5DB1ACC28C00046248F;
 					};
 				};
 			};
@@ -177,6 +292,8 @@
 			targets = (
 				82ACE7D91AC9A2B700FEA6B1 /* Hocus Pocus */,
 				82ACE7E91AC9A2B700FEA6B1 /* Hocus PocusTests */,
+				82D1F5DB1ACC28C00046248F /* Hocus Pocus Helper */,
+				82D1F5EA1ACC28C10046248F /* Hocus Pocus HelperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +309,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		82ACE7E81AC9A2B700FEA6B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D1F5DA1ACC28C00046248F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D1F5E31ACC28C00046248F /* Images.xcassets in Resources */,
+				82D1F5E61ACC28C00046248F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D1F5E91ACC28C10046248F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +350,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		82D1F5D81ACC28C00046248F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D1F5E11ACC28C00046248F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D1F5E71ACC28C10046248F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D1F5F21ACC28C10046248F /* Hocus_Pocus_HelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -225,6 +374,11 @@
 			target = 82ACE7D91AC9A2B700FEA6B1 /* Hocus Pocus */;
 			targetProxy = 82ACE7EB1AC9A2B700FEA6B1 /* PBXContainerItemProxy */;
 		};
+		82D1F5ED1ACC28C10046248F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82D1F5DB1ACC28C00046248F /* Hocus Pocus Helper */;
+			targetProxy = 82D1F5EC1ACC28C10046248F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -232,6 +386,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				82ACE7E41AC9A2B700FEA6B1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		82D1F5E41ACC28C00046248F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82D1F5E51ACC28C00046248F /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -374,6 +536,68 @@
 			};
 			name = Release;
 		};
+		82D1F5F31ACC28C10046248F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hocus Pocus Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		82D1F5F41ACC28C10046248F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hocus Pocus Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		82D1F5F51ACC28C10046248F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hocus Pocus HelperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hocus Pocus Helper.app/Contents/MacOS/Hocus Pocus Helper";
+			};
+			name = Debug;
+		};
+		82D1F5F61ACC28C10046248F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hocus Pocus HelperTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hocus Pocus Helper.app/Contents/MacOS/Hocus Pocus Helper";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +627,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		82D1F5F71ACC28C10046248F /* Build configuration list for PBXNativeTarget "Hocus Pocus Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D1F5F31ACC28C10046248F /* Debug */,
+				82D1F5F41ACC28C10046248F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		82D1F5F81ACC28C10046248F /* Build configuration list for PBXNativeTarget "Hocus Pocus HelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D1F5F51ACC28C10046248F /* Debug */,
+				82D1F5F61ACC28C10046248F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

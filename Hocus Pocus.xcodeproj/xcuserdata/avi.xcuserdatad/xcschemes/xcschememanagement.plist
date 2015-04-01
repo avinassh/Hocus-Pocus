@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Hocus Pocus Helper.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Hocus Pocus.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>82ACE7E91AC9A2B700FEA6B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82D1F5DB1ACC28C00046248F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82D1F5EA1ACC28C10046248F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
