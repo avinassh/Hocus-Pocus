@@ -15,6 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var showHiddenFilesMenuItem: NSMenuItem!
     
+    // variable which refers to our preferences window
+    var preferences : CCNPreferencesWindowController!
 
     // Menu Bar is what generally called, but in code it's actually called as
     // statusBar and statusMenu
@@ -47,6 +49,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if "YES" == getCurrentHideStatus() {
             showHiddenFilesMenuItem.state = NSOnState
         }
+        
+        // code for setting up preferences
+        preferences = CCNPreferencesWindowController()
+        preferences.centerToolbarItems = true
+        preferences.setPreferencesViewControllers([PreferenceNSViewController()])
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -92,6 +99,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func showAboutWindow(sender: NSMenuItem) {
         NSApplication.sharedApplication().orderFrontStandardAboutPanel(nil)
     }
+    
+    @IBAction func displayPreferences(sender: NSMenuItem) {
+        preferences.showPreferencesWindow()
+    }
+    
     
     func getCurrentHideStatus() -> String {
         // createa  new pipe which holds the output of command run

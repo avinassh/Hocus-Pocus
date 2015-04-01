@@ -675,6 +675,12 @@
                         <action selector="showHiddenFiles:" target="Voe-Tx-rLC" id="xUJ-WG-YSi"/>
                     </connections>
                 </menuItem>
+                <menuItem title="Preferences..." id="MZh-Do-VPr">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="displayPreferences:" target="Voe-Tx-rLC" id="P0Y-bd-0te"/>
+                    </connections>
+                </menuItem>
                 <menuItem title="About Hocus Pocus" id="853-Tc-lGA">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>

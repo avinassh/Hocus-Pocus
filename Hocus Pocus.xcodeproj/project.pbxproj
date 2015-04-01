@@ -12,6 +12,8 @@
 		82ACE7E51AC9A2B700FEA6B1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82ACE7E31AC9A2B700FEA6B1 /* MainMenu.xib */; };
 		82ACE7F11AC9A2B700FEA6B1 /* Hocus_PocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACE7F01AC9A2B700FEA6B1 /* Hocus_PocusTests.swift */; };
 		82D1F5D31ACC0A010046248F /* CCNPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1F5D11ACC0A010046248F /* CCNPreferencesWindowController.m */; };
+		82D1F5D61ACC0BAD0046248F /* PreferenceNSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1F5D41ACC0BAD0046248F /* PreferenceNSViewController.swift */; };
+		82D1F5D71ACC0BAD0046248F /* PreferenceNSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82D1F5D51ACC0BAD0046248F /* PreferenceNSViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		82D1F5D01ACC0A010046248F /* CCNPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNPreferencesWindowController.h; sourceTree = "<group>"; };
 		82D1F5D11ACC0A010046248F /* CCNPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNPreferencesWindowController.m; sourceTree = "<group>"; };
 		82D1F5D21ACC0A010046248F /* CCNPreferencesWindowControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNPreferencesWindowControllerProtocol.h; sourceTree = "<group>"; };
+		82D1F5D41ACC0BAD0046248F /* PreferenceNSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceNSViewController.swift; sourceTree = "<group>"; };
+		82D1F5D51ACC0BAD0046248F /* PreferenceNSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferenceNSViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				82ACE7E11AC9A2B700FEA6B1 /* Images.xcassets */,
 				82ACE7E31AC9A2B700FEA6B1 /* MainMenu.xib */,
 				82ACE7DD1AC9A2B700FEA6B1 /* Supporting Files */,
+				82D1F5D41ACC0BAD0046248F /* PreferenceNSViewController.swift */,
+				82D1F5D51ACC0BAD0046248F /* PreferenceNSViewController.xib */,
 			);
 			path = "Hocus Pocus";
 			sourceTree = "<group>";
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82ACE7E21AC9A2B700FEA6B1 /* Images.xcassets in Resources */,
+				82D1F5D71ACC0BAD0046248F /* PreferenceNSViewController.xib in Resources */,
 				82ACE7E51AC9A2B700FEA6B1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D1F5D61ACC0BAD0046248F /* PreferenceNSViewController.swift in Sources */,
 				82D1F5D31ACC0A010046248F /* CCNPreferencesWindowController.m in Sources */,
 				82ACE7E01AC9A2B700FEA6B1 /* AppDelegate.swift in Sources */,
 			);
