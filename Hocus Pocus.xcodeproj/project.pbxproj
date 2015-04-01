@@ -15,6 +15,7 @@
 		82D1F5E31ACC28C00046248F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D1F5E21ACC28C00046248F /* Images.xcassets */; };
 		82D1F5E61ACC28C00046248F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82D1F5E41ACC28C00046248F /* MainMenu.xib */; };
 		82D1F5F21ACC28C10046248F /* Hocus_Pocus_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1F5F11ACC28C10046248F /* Hocus_Pocus_HelperTests.swift */; };
+		82D1F5FE1ACC2CAC0046248F /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D1F5FD1ACC2CAC0046248F /* ServiceManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		82D1F5EB1ACC28C10046248F /* Hocus Pocus HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hocus Pocus HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D1F5F01ACC28C10046248F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82D1F5F11ACC28C10046248F /* Hocus_Pocus_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hocus_Pocus_HelperTests.swift; sourceTree = "<group>"; };
+		82D1F5FD1ACC2CAC0046248F /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D1F5FE1ACC2CAC0046248F /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +91,7 @@
 		82ACE7D11AC9A2B700FEA6B1 = {
 			isa = PBXGroup;
 			children = (
+				82D1F5FD1ACC2CAC0046248F /* ServiceManagement.framework */,
 				82ACE7DC1AC9A2B700FEA6B1 /* Hocus Pocus */,
 				82ACE7ED1AC9A2B700FEA6B1 /* Hocus PocusTests */,
 				82D1F5DD1ACC28C00046248F /* Hocus Pocus Helper */,
@@ -635,6 +639,7 @@
 				82D1F5F41ACC28C10046248F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		82D1F5F81ACC28C10046248F /* Build configuration list for PBXNativeTarget "Hocus Pocus HelperTests" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +648,7 @@
 				82D1F5F61ACC28C10046248F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
