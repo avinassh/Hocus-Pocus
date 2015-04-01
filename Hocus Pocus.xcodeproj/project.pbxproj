@@ -16,6 +16,7 @@
 		82D1F5E61ACC28C00046248F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82D1F5E41ACC28C00046248F /* MainMenu.xib */; };
 		82D1F5F21ACC28C10046248F /* Hocus_Pocus_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D1F5F11ACC28C10046248F /* Hocus_Pocus_HelperTests.swift */; };
 		82D1F5FE1ACC2CAC0046248F /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D1F5FD1ACC2CAC0046248F /* ServiceManagement.framework */; };
+		82D1F6001ACC2DD10046248F /* Hocus Pocus Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 82D1F5DC1ACC28C00046248F /* Hocus Pocus Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,19 @@
 			remoteInfo = "Hocus Pocus Helper";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		82D1F5FF1ACC2DC10046248F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				82D1F6001ACC2DD10046248F /* Hocus Pocus Helper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		82ACE7DA1AC9A2B700FEA6B1 /* Hocus Pocus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hocus Pocus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +207,7 @@
 				82ACE7D61AC9A2B700FEA6B1 /* Sources */,
 				82ACE7D71AC9A2B700FEA6B1 /* Frameworks */,
 				82ACE7D81AC9A2B700FEA6B1 /* Resources */,
+				82D1F5FF1ACC2DC10046248F /* CopyFiles */,
 			);
 			buildRules = (
 			);
