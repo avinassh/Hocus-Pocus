@@ -11,7 +11,6 @@ import Cocoa
 class PreferenceNSViewController: NSViewController, CCNPreferencesWindowControllerProtocol {
     
     override init() {
-        
         super.init()
     }
     
@@ -38,6 +37,12 @@ class PreferenceNSViewController: NSViewController, CCNPreferencesWindowControll
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
+    }
+    
+    @IBAction func startAtLogin(sender: NSButton) {
+        println(sender.state)
+        // To Do:
+        // implement code here which puts this app into Startup Login Items
     }
     
 }
