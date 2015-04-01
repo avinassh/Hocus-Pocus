@@ -11,6 +11,7 @@
 		82ACE7E21AC9A2B700FEA6B1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82ACE7E11AC9A2B700FEA6B1 /* Images.xcassets */; };
 		82ACE7E51AC9A2B700FEA6B1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82ACE7E31AC9A2B700FEA6B1 /* MainMenu.xib */; };
 		82ACE7F11AC9A2B700FEA6B1 /* Hocus_PocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ACE7F01AC9A2B700FEA6B1 /* Hocus_PocusTests.swift */; };
+		82D1F5D31ACC0A010046248F /* CCNPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1F5D11ACC0A010046248F /* CCNPreferencesWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,10 @@
 		82ACE7EA1AC9A2B700FEA6B1 /* Hocus PocusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hocus PocusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82ACE7EF1AC9A2B700FEA6B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82ACE7F01AC9A2B700FEA6B1 /* Hocus_PocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hocus_PocusTests.swift; sourceTree = "<group>"; };
+		82D1F5CF1ACC0A000046248F /* Hocus Pocus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hocus Pocus-Bridging-Header.h"; sourceTree = "<group>"; };
+		82D1F5D01ACC0A010046248F /* CCNPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNPreferencesWindowController.h; sourceTree = "<group>"; };
+		82D1F5D11ACC0A010046248F /* CCNPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCNPreferencesWindowController.m; sourceTree = "<group>"; };
+		82D1F5D21ACC0A010046248F /* CCNPreferencesWindowControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNPreferencesWindowControllerProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 		82ACE7D11AC9A2B700FEA6B1 = {
 			isa = PBXGroup;
 			children = (
+				82D1F5CE1ACC09DC0046248F /* CCNPreferencesWindows */,
 				82ACE7DC1AC9A2B700FEA6B1 /* Hocus Pocus */,
 				82ACE7ED1AC9A2B700FEA6B1 /* Hocus PocusTests */,
 				82ACE7DB1AC9A2B700FEA6B1 /* Products */,
@@ -104,6 +110,17 @@
 				82ACE7EF1AC9A2B700FEA6B1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82D1F5CE1ACC09DC0046248F /* CCNPreferencesWindows */ = {
+			isa = PBXGroup;
+			children = (
+				82D1F5D01ACC0A010046248F /* CCNPreferencesWindowController.h */,
+				82D1F5D11ACC0A010046248F /* CCNPreferencesWindowController.m */,
+				82D1F5D21ACC0A010046248F /* CCNPreferencesWindowControllerProtocol.h */,
+				82D1F5CF1ACC0A000046248F /* Hocus Pocus-Bridging-Header.h */,
+			);
+			name = CCNPreferencesWindows;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D1F5D31ACC0A010046248F /* CCNPreferencesWindowController.m in Sources */,
 				82ACE7E01AC9A2B700FEA6B1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,10 +338,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Hocus Pocus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hocus Pocus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -331,10 +352,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Hocus Pocus/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hocus Pocus-Bridging-Header.h";
 			};
 			name = Release;
 		};
