@@ -16,6 +16,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        
+        println(NSBundle.mainBundle().bundlePath)
+        let pathToMainApp = NSBundle.mainBundle().bundlePath.stringByDeletingLastPathComponent.stringByDeletingLastPathComponent.stringByDeletingLastPathComponent.stringByDeletingLastPathComponent
+        NSWorkspace.sharedWorkspace().launchApplication("Hocus Pocus.app")
+        NSApplication.sharedApplication().terminate(self)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
